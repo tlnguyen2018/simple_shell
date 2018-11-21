@@ -1,0 +1,53 @@
+.TH HSH 1 "November 2018" "Simple Shell man page"
+
+.SH NAME
+
+.B hsh
+shell \- simple UNIX command interpreter
+
+.SH SYNOPSIS
+.B hsh
+Simple Shell interpret the input, comminicate to operating system, and process the request typed from keyboard.
+
+.SH DESCRIPTION
+The
+.B hsh
+Functioning by read the line using getline, and excecute it per request.
+
+.SH USAGE
+All the files are to be compiled on an Ubuntu 14.04 LTS machine with "gcc -Wall -Werror -Wextra -pedantic *.c -o ./hsh".
+
+Once compiled, to start the program, run:
+
+.br
+$ ./hsh
+
+To exit the program, run:
+
+.br
+$ exit
+
+
+.SH BUILT-INS
+Built-ins function that are supported by Simple Shell:
+
+.B exit -
+Exits the Shell.
+
+.B env -
+Print the current environment.
+
+.SH RETURN VALUE
+
+Exit with status 0 for success.
+
+.SH SEE ALSO
+
+.I sh(1)
+
+.SH BUGS
+
+Unknown.
+
+.SH AUTHOR
+THANG NGUYEN
