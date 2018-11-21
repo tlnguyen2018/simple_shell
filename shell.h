@@ -16,7 +16,6 @@
 #define NON_BUILTIN 0
 
 extern char **environ;
-
 extern int errno;
 
 /**
@@ -34,28 +33,21 @@ typedef struct built_in
 char *check_path(char *);
 char **arg_list(int);
 int error_call(int, char *, char **);
-
 void free_double(char **);
-
 char **strtow(char *, char);
 int word_counter(char *, char);
 char *_malloc(int n, char **);
-
 char exit_builtin(char **, char **);
 char env_builtin(char **, char **);
-
 int _strlen(char *);
 int _strcmp(char *, char *);
 char *_strcat_dir(char *, char *);
 int _atoi(char *);
-
 char **build_path(char *);
 void print_dir(char *);
 void print_env(char **);
 char *_getenv(char *);
 char *cut_env(char *);
-
 int print_str(char *);
 int builtin_finder(char **);
-
 #endif

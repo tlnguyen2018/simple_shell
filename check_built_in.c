@@ -1,20 +1,4 @@
 #include "shell.h"
-
-/**
- * print_str - prints a string to standard out
- *
- * @str: string to write out
- * Return: int of how many chars written
- */
-int print_str(char *str)
-{
-	if (str == '\0') /*!str*/
-		return (-1);
-	/*for (i = 0; *(str + i);)
-	  i++;*/
-	return (write(STDOUT_FILENO, str, _strlen(str)));
-}
-
 /**
  * builtin_finder - checks if the first argument matches a built in command
  *
